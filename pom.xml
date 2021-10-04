@@ -71,11 +71,16 @@
 	</pluginRepositories>
 	
 <distributionManagement>
-  <repository>
-     	<id>github</id>
-     	<name>Github Packages</name>
-     	<url>https://maven.pkg.github.com/spsmexico/mulesoft-github-actions-domain</url>
-   </repository>
+    <repository>
+        <id>central</id>
+        <name>a0wki9kn0wrng-artifactory-primary-0-releases</name>
+        <url>https://testsps.jfrog.io/artifactory/default-maven-virtual</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>a0wki9kn0wrng-artifactory-primary-0-snapshots</name>
+        <url>https://testsps.jfrog.io/artifactory/default-maven-virtual</url>
+    </snapshotRepository>
 </distributionManagement>
 
 
