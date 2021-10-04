@@ -16,6 +16,9 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
           cache: 'maven'
+          server-id: snapshots # Value of the distributionManagement/repository/id field of the pom.xml
+          server-username: ${{ secrets.ARTIFACTORY_USER}} # env variable for username in deploy
+          server-password: ${{ secrets.ARTIFACTORY_PASSWORD}} # env variable for token in deploy
       - name: Build Mule app
         run: |
          mvn --batch-mode verify
